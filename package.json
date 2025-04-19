@@ -1,10 +1,13 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://Escam01/.github.io/NeverLand",
   "private": true,
   "scripts": {
+    "deploy": "npm run build && gh-pages -d dist",
     "dev": "next dev --port 4000",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
