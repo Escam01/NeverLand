@@ -8,18 +8,16 @@ const Signin = () => {
           <div className="w-full px-4">
             <div className="relative mx-auto max-w-[525px] overflow-hidden rounded-lg bg-white px-10 py-16 text-center dark:bg-dark-2 sm:px-12 md:px-[60px]">
               <div className="mb-10 text-center md:mb-16">
-                <a
-                  href="/#"
-                  className="mx-auto inline-block max-w-[160px]"
-                >
-                    <h6 className="text-4xl text-blue-700">
-                        NeverLand
-                    </h6>
+                <a href="/#" className="mx-auto inline-block max-w-[160px]">
+                  <h6 className="text-4xl text-blue-700">NeverLand</h6>
                   {/* <img
                     src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg"
                     alt="logo"
-                  /> */}
+                    /> */}
                 </a>
+                <p className="text-red-600 ">
+                  Неверный пароль или логин
+                </p>
               </div>
               <form>
                 <InputBox type="email" name="email" placeholder="Email" />
@@ -29,11 +27,12 @@ const Signin = () => {
                   placeholder="Password"
                 />
                 <div className="mb-10">
-                  <input
+                  <button
                     type="submit"
-                    value="Войти"
                     className="w-full cursor-pointer rounded-md border border-primary bg-primary px-5 py-3 text-base font-medium text-white transition hover:bg-opacity-90"
-                  />
+                  >
+                    Войти
+                  </button>
                 </div>
               </form>
               <p className="mb-6 text-base text-secondary-color dark:text-dark-7">
@@ -45,10 +44,7 @@ const Signin = () => {
                     href="/#"
                     className="flex h-11 items-center justify-center rounded-md  bg-[#4064AC] hover:bg-opacity-90"
                   >
-                    <p className="text-white">
-
-                    VK
-                    </p>
+                    <p className="text-white">VK</p>
 
                     {/* <svg
                       width="10"
@@ -69,10 +65,7 @@ const Signin = () => {
                     href="/#"
                     className="flex h-11 items-center justify-center rounded-md bg-[#ea1c1c] hover:bg-opacity-90"
                   >
-                    <p className="text-white">
-
-                    Я
-                    </p>
+                    <p className="text-white">Я</p>
                     {/* <svg
                       width="22"
                       height="16"
@@ -115,10 +108,7 @@ const Signin = () => {
               </a>
               <p className="text-base text-body-color dark:text-dark-6">
                 <span className="pr-0.5">Не зарегестрированы?</span>
-                <a
-                  href="/#"
-                  className="text-primary hover:underline"
-                >
+                <a href="/#" className="text-primary hover:underline">
                   Зарегестрируйтесь
                 </a>
               </p>
